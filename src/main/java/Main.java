@@ -31,5 +31,18 @@ public class Main {
         } else {
             System.out.println("Berlinale 2025 is starting today");
         }
+
+        Instant today = Instant.now();
+        System.out.println(today.plus(5, ChronoUnit.DAYS));
+        System.out.println(ChronoUnit.DAYS.addTo(today, 5));
+
+        Animal wolfgang = new Animal(LocalDate.of(2014,5,20), "Wolfgang");
+        Animal susie = new Animal(LocalDate.of(2017,4,20), "Susie");
+        Animal paul = new Animal(LocalDate.of(2022,5,7), "Paul");
+
+        System.out.println(wolfgang.daysUntilNextBirthday() + " days until " + wolfgang.getName() + "'s birthday.");
+        System.out.println(susie.daysUntilNextBirthday() + " days until " + susie.getName() + "'s birthday.");
+        System.out.println(paul.daysUntilNextBirthday() + " days until " + paul.getName() + "'s birthday.");
+
     }
 }
