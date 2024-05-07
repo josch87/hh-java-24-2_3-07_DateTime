@@ -1,7 +1,6 @@
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
 
 public class Main {
@@ -40,9 +39,9 @@ public class Main {
         Animal susie = new Animal(LocalDate.of(2017,4,20), "Susie");
         Animal paul = new Animal(LocalDate.of(2022,5,7), "Paul");
 
-        System.out.println(wolfgang.daysUntilNextBirthday() + " days until " + wolfgang.getName() + "'s birthday.");
-        System.out.println(susie.daysUntilNextBirthday() + " days until " + susie.getName() + "'s birthday.");
-        System.out.println(paul.daysUntilNextBirthday() + " days until " + paul.getName() + "'s birthday.");
+        System.out.println(wolfgang.daysUntilNextBirthday() + " days until " + wolfgang.name() + "'s birthday.");
+        System.out.println(susie.daysUntilNextBirthday() + " days until " + susie.name() + "'s birthday.");
+        System.out.println(paul.daysUntilNextBirthday() + " days until " + paul.name() + "'s birthday.");
 
     }
 }
